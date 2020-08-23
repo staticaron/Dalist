@@ -8,8 +8,11 @@ public class NewList : MonoBehaviour
 	public void CreateList()
 	{
 		GameObject createdList = Instantiate(SampleList);
-		createdList.transform.SetParent(ListContainer.transform);    //Set the parent
-		SendNewButtonToLast();
+		createdList.transform.SetParent(ListContainer.transform, false);    //Set the parent
+
+		createdList.transform.localScale = new Vector3(3, 3, 3);        //Sets a size so that it fits the screen
+
+		SendNewButtonToLast();      //Set the new List position at last
 	}
 
 	void SendNewButtonToLast()
