@@ -288,6 +288,7 @@ GameObject:
   m_Component:
   - component: {fileID: 392093019}
   - component: {fileID: 392093020}
+  - component: {fileID: 392093021}
   - component: {fileID: 392093018}
   - component: {fileID: 392093017}
   - component: {fileID: 392093016}
@@ -354,7 +355,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 7
+  m_AdditionalShaderChannelsFlag: 31
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -390,6 +391,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a85732c40b0320040a15921119cbfc48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &392093021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 392093015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28b531e5100d7bc4da884b68ef461c7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1182417760
@@ -1003,12 +1016,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: 
+      - m_Target: {fileID: 392093021}
+        m_MethodName: PrintSaveData
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
