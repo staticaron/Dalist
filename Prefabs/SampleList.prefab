@@ -212,6 +212,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardContainer: {fileID: 4085144500071831577}
+  listName: {fileID: 2776460161566675896}
+  creationIndex: 0
 --- !u!222 &1602238932872439709
 CanvasRenderer:
   m_ObjectHideFlags: 0

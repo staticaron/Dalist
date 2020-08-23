@@ -2,6 +2,9 @@
 
 public class NewList : MonoBehaviour
 {
+	//Singleton
+	public static NewList instance;
+
 	public GameObject ListContainer;        //Stores a reference to the List Container
 	public GameObject SampleList;           //SampleList gameobject that can be modified
 
