@@ -24,6 +24,8 @@ public static class SaveSystem
 	{
 		string savePath = Application.persistentDataPath + "/" + boardFile + ".dls";
 
+		Debug.Log(savePath);
+
 		if (!File.Exists(savePath))
 		{
 			Debug.Log("Save File not found");

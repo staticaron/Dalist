@@ -8,6 +8,8 @@ public class SaveBoard : MonoBehaviour
 
 	void Start()
 	{
+		print(PlayerPrefs.GetString("CurrentProject"));
+
 		try
 		{
 			numberOfList = SaveSystem.loadBoard(PlayerPrefs.GetString("CurrentProject")).numberOfLists;
@@ -15,7 +17,7 @@ public class SaveBoard : MonoBehaviour
 		}
 		catch
 		{
-			print("Error getting data");
+			print("Error getting board Name");
 		}
 	}
 
