@@ -13,8 +13,6 @@ public class NewList : MonoBehaviour
 		createdList.transform.localScale = new Vector3(3, 3, 3);        //Sets a size so that it fits the screen
 
 		SendNewButtonToLast();      //Set the new List position at last
-
-		SaveBoard.numberOfList = SaveBoard.numberOfList + 1;        //Update the data
 	}
 
 	void SendNewButtonToLast()

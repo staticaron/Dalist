@@ -10,6 +10,8 @@ public class AddNewCard : MonoBehaviour
 		GameObject createdCard = Instantiate(sampleCard);
 		createdCard.transform.SetParent(cardContainer.transform);       //Set parent to card container
 
-		createdCard.transform.localScale = Vector3.one;         //Maintain same size for all aspects
+		Card thisCard = createdCard.GetComponent<Card>();
+		thisCard.setSize();        //Maintain same size for all aspects
+		thisCard.currentlyAttached = cardContainer.transform;
 	}
 }

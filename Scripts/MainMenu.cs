@@ -7,6 +7,11 @@ public class MainMenu : MonoBehaviour
 {
 	public TMP_InputField createBoardNameInput;     //reference to the project name taker
 
+	void Start()
+	{
+		print(PlayerPrefs.GetString("CurrentProject"));
+	}
+
 	public void Create()
 	{
 		string boardName = createBoardNameInput.text;       //Get the boardName
@@ -31,5 +36,10 @@ public class MainMenu : MonoBehaviour
 
 		//Load empty template
 		SceneManager.LoadScene("EmptyTemplate");
+	}
+
+	public void Load()
+	{
+		SceneManager.LoadScene("SavedBoard");
 	}
 }
