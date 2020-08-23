@@ -4,16 +4,17 @@ using TMPro;
 
 public class Card : MonoBehaviour
 {
-	private TMP_InputField thisCard;
-
-	void Awake()
-	{
-		thisCard = GetComponent<TMP_InputField>();
-	}
+	public TMP_InputField thisData;
+	public Button thisActivatorButton;
 
 	public void Clicked()
 	{
-		thisCard.enabled = true;
-		thisCard.ActivateInputField();
+		thisActivatorButton.gameObject.SetActive(false);
+		thisData.ActivateInputField();
+	}
+
+	public void ClickedOutside()
+	{
+		thisActivatorButton.gameObject.SetActive(true);
 	}
 }
